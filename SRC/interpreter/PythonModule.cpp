@@ -529,6 +529,15 @@ initopensees(void)
 
     if (pymodule == NULL)
         INITERROR;
+    PySys_WriteStdout("\n\n");
+    PySys_WriteStdout("         OpenSees -- Open System For Earthquake Engineering Simulation\n");
+    PySys_WriteStdout("                 Pacific Earthquake Engineering Research Center\n");
+    PySys_WriteStdout("                        Version %s %s\n\n", OPS_VERSION, WIN_ARCH);
+    PySys_WriteStdout("\n");
+    PySys_WriteStdout("      (c) Copyright 1999-2016 The Regents of the University of California\n");
+    PySys_WriteStdout("                              All Rights Reserved\n");
+    PySys_WriteStdout("  (Copyright and Disclaimer @ http://www.berkeley.edu/OpenSees/copyright.html)\n\n\n");
+    PySys_WriteStdout("  *********** (o_O) OPENSEES (>'-')> Ladruño4ever *********** %s\n\n\n", OPS_VERSION);
     struct module_state *st = GETSTATE(pymodule);
 
     // add OpenSeesError

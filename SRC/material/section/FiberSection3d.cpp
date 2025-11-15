@@ -51,6 +51,7 @@ ID FiberSection3d::code(4);
 
 void* OPS_FiberSection3d()
 {
+    printf("\n(>'-')>------------Ladruño4ever [DEBUG]---(o_O)  FiberSection3d \n");
     int numData = OPS_GetNumRemainingInputArgs();
     if(numData < 1) {
 	    opserr<<"insufficient arguments for FiberSection3d\n";

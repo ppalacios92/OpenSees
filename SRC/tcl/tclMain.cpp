@@ -248,6 +248,7 @@ g3TclMain(int argc, char **argv, Tcl_AppInitProc * appInitProc, int rank, int np
 	fprintf(stderr,"      (c) Copyright 1999-2016 The Regents of the University of California\n");
 	fprintf(stderr,"                              All Rights Reserved\n");
 	fprintf(stderr,"  (Copyright and Disclaimer @ http://www.berkeley.edu/OpenSees/copyright.html)\n\n\n");
+	PySys_WriteStdout("  *********** (o_O) OPENSEES (>'-')> Ladruño4ever *********** %s\n\n\n", OPS_VERSION);
       }
 #ifdef _PARALLEL_INTERPRETERS
     }

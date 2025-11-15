@@ -55,6 +55,7 @@ FiberSectionGJ::FiberSectionGJ(int tag, int num, Fiber **fibers, double gj):
   numFibers(num), theMaterials(0), matData(0),
   yBar(0.0), zBar(0.0), e(4), GJ(gj)
 {
+  printf("\n(>'-')>------------Ladruño4ever [DEBUG]---(o_O)  FiberSectionGJ \n");
   if (numFibers != 0) {
     theMaterials = new UniaxialMaterial *[numFibers];
 
